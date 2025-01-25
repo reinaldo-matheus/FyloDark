@@ -11,7 +11,7 @@
 .header nav ul {
     display: flex;
     gap: 60px;
-    font-family: "Raleway", serif;
+    font-family: 'Raleway', serif;
     font-weight: 400;
 }
 
@@ -20,7 +20,13 @@
     font-weight: bold;
 }
 
-main{
+.header nav ul li:hover {
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: 1px solid #FFF;
+}
+
+main {
     margin-top: 75px;
     display: flex;
     flex-direction: column;
@@ -29,25 +35,351 @@ main{
     color: #fff;
 }
 
-main .titulo{
+main .titulo {
     font-family: 'Raleway', serif;
     font-size: 40px;
     max-width: 700px;
     text-align: center;
 }
 
-main .primeiro-paragrafo{
+main .primeiro-paragrafo {
     font-size: 20px;
     text-align: center;
     line-height: 30px;
     max-width: 590px;
 }
-main .btn-comecar{
-    background-color: #63E1D9;
+
+main .btn-comecar {
+    background-color: #34A0CD;
     color: #ffffff;
     font-family: 'Raleway', serif;
     font-size: 16px;
     font-weight: bold;
     padding: 19px 95px 18px 96px;
     border-radius: 28px;
+    border: none;
+}
+
+main .btn-comecar:hover {
+    background-color: #8ADAE3;
+    transition: 0.3s ease-in-out;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 158px;
+
+}
+
+.informacoes ul {
+    display: flex;
+    max-width: 880px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 147px;
+
+}
+
+.informacoes ul li {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.informacoes ul li img {
+    margin-bottom: 34px;
+
+}
+
+.informacoes ul li h3 {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.informacoes ul li p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.seguranca {
+    display: flex;
+    margin-top: 140px;
+    gap: 60px;
+    align-items: center;
+}
+
+.seguranca div h3 {
+    font-family: 'Raleway', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+
+.seguranca div p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 16px;
+    max-width: 563px;
+}
+
+.seguranca div a {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #62E0D9;
+    gap: 8px;
+    margin-top: 24px;
+    align-items: center;
+    width: fit-content;
+    border-bottom: 1px solid #62E0D9;
+}
+
+.seguranca div a:hover {
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid #fff;
+    
+}
+
+.seguranca div a:hover svg use{
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.founders {
+    position: relative;
+    margin-top: 120px;
+}
+
+.founders>img {
+    position: absolute;
+    top: -40px;
+    z-index: 0;
+    left: -10px;
+}
+
+.founders .feedbacks {
+    color: #FFFFFF;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.founders .feedbacks .card {
+    background-color: #202A3C;
+    padding: 40px 26px 26px 26px;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 1B2330 0px 4px 8px 0px;
+}
+
+.founders .feedbacks .card .user img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.founders .feedbacks .card .user {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    gap: 8px;
+}
+
+.founders .feedbacks .card .user .info-usuario h5 {
+    font-size: 10px;
+}
+
+.founders .feedbacks .card .user .info-usuario p {
+    font-size: 7px;
+}
+
+.cta-section {
+    margin: 0 auto;
+    max-width: 863px;
+    min-width: 300px;
+    background-color: #1B2330;
+    padding: 42px 77px;
+    margin-top: 200px;
+    transform: translateY(50%);
+    border-radius: 4px;
+    box-shadow: #1B2330 0px 4px 8px 0px;
+}
+
+.container-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.container-cta h4 {
+    color: #fff;
+    font-family: 'Raleway', serif;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.container-cta p {
+    max-width: 676px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 38px;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.form input {
+    border-radius: 24px;
+    width: 70%;
+    padding-left: 38px;
+    outline: none;
+    border: none;
+}
+
+.form button {
+    padding: 15px 27px;
+    color: #fff;
+    background-color: #62E0D9;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #8adae3;
+}
+
+
+
+.footer {
+    background: #0B1524;
+    color: #fff;
+    height: 441px;
+}
+
+.footer .container {
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 53px;
+}
+
+.footer .container > img {
+    align-self: flex-start;
+    margin-top: 70px;
+    width: 108px;
+    height: 31px;
+}
+
+.footer .container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+
+
+.footer .container .location {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    height: 100%;
+
+
+}
+
+.footer .container .location img {
+    margin-top: 5px;
+}
+
+.footer .container .location p {
+    font-size: 16px;
+    max-width: 339px;
+}
+
+.footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.footer .container .contact .contact-info {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer .container .contact .contact-info p {
+    font-size: 14px;
+}
+
+.footer .container .info-enterprise {
+    display: flex;
+    gap: 80px;
+}
+
+.footer .container .info-enterprise ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.footer .container .redes-sociais {
+    height: 100%;
+
+}
+
+.footer .container .redes-sociais ul {
+    display: flex;
+    gap: 12px;
+}
+
+.footer .container .redes-sociais i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+}
+
+.footer .container .redes-sociais i:hover {
+    border: 1px solid #62E0D9;
+    color: #62E0D9;
+    transition: 0.3s ease-in-out;
 }
