@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 73px;
+    color: #fff;
+}
+
+
+
+.header nav ul {
+    display: flex;
+    gap: 60px;
+    font-family: "Raleway", serif;
+    font-weight: 400;
+}
+
+.header nav ul li:last-child a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+main{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: #fff;
+}
+
+main .titulo{
+    font-family: 'Raleway', serif;
+    font-size: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+main .primeiro-paragrafo{
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    max-width: 590px;
+}
+main .btn-comecar{
+    background-color: #63E1D9;
+    color: #ffffff;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 19px 95px 18px 96px;
+    border-radius: 28px;
+}

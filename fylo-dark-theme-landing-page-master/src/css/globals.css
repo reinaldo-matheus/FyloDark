@@ -1,0 +1,12 @@
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+}
